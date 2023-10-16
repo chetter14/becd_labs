@@ -1,0 +1,7 @@
+!.gitignore
+
+lab*/*
+!lab*/*.v
+!lab*/*.vcd
+!lab*/*.md
+!lab*/*.png

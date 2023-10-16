@@ -1,0 +1,89 @@
+$date
+	Mon Oct 16 18:18:46 2023
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ns
+$end
+$scope module DECODER_3_TO_5_TB $end
+$var wire 1 ! d4 $end
+$var wire 1 " d3 $end
+$var wire 1 # d2 $end
+$var wire 1 $ d1 $end
+$var wire 1 % d0 $end
+$var reg 3 & in [2:0] $end
+$scope module decoder $end
+$var wire 3 ' in [2:0] $end
+$var reg 1 % d0 $end
+$var reg 1 $ d1 $end
+$var reg 1 # d2 $end
+$var reg 1 " d3 $end
+$var reg 1 ! d4 $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 '
+b0 &
+1%
+0$
+0#
+0"
+0!
+$end
+#5
+1$
+0%
+b1 &
+b1 '
+#10
+1#
+0$
+b10 &
+b10 '
+#15
+1"
+0#
+b11 &
+b11 '
+#20
+1!
+0"
+b100 &
+b100 '
+#25
+0!
+b101 &
+b101 '
+#30
+1%
+b0 &
+b0 '
+#35
+1$
+0%
+b1 &
+b1 '
+#40
+1#
+0$
+b10 &
+b10 '
+#45
+1"
+0#
+b11 &
+b11 '
+#50
+1!
+0"
+b100 &
+b100 '
+#55
+0!
+b101 &
+b101 '
+#60
