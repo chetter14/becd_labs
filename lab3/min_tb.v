@@ -21,14 +21,14 @@ module MIN_OF_INPUTS_TB();
 	in2 = 10'b10_1010_0100;
 	in3 = 10'b00_0101_1000;
 	
-	repeat (2) #period;
+	#(period*2);
 	
 	in0 = 10'b00_0000_1000;
 	in1 = 10'b00_1111_1001;
 	in2 = 10'b10_1010_0010;
 	in3 = 10'b00_0101_0100;
 	
-	repeat (2) #period;
+	#(period*2);
 		
 	$finish;
   end

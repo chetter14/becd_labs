@@ -12,30 +12,11 @@ module DECODER_3_TO_5_TB();
     $dumpvars(0, DECODER_3_TO_5_TB);
   end
 
-  localparam period = 5;
+  always #1 in = in + 1;
 
   initial begin
-	repeat (2) begin 
-		in = 3'b000;
-		
-		#period;
-		in = 3'b001;
-		
-		#period;
-		in = 3'b010;
-		
-		#period;
-		in = 3'b011;
-		
-		#period;
-		in = 3'b100;
-		
-		#period;
-		in = 3'b101;
-		
-		#period;
-	end
-	
+	in = 3'b000;
+	#16;
 	$finish;
   end
 

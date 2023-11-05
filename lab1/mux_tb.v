@@ -13,37 +13,21 @@ module MUX_6_TO_1_TB();
     $dumpvars(0, MUX_6_TO_1_TB);
   end
 
-  localparam period = 5;
-
   initial begin
     d0 = 10; d1 = 20; d2 = 30; d3 = 40; d4 = 50; d5 = 60;
     sel = 3'b000;
-	
-	#period;
-	sel = 3'b001;
-	
-	#period;
-	sel = 3'b010;
-	
-	#period;
-	sel = 3'b011;
-	
-	#period;
-	sel = 3'b100;
-	
-	#period;
-	sel = 3'b101;
-	
-	#period;
-	sel = 3'b111;
-	
-	repeat (2) #period;	
+  end  
+  
+  always #1 sel = sel + 1;
+  
+  initial begin
+	#5;
 	d0 = 100;
-	sel = 3'b000;
-	
-	#period;
-	
-	$finish;
+	d2 = 33;
+  end
+  
+  initial begin
+	#16; $finish;
   end
 
 endmodule
