@@ -7,7 +7,7 @@ module COUNTER
 	
   always@(posedge clk or posedge reset) begin
 	
-	if (reset)				// Reset
+	if (reset)					// Reset
 	  count <= 17;
 	else if (count == 0)		// Enable signal
 	  count <= 17;
