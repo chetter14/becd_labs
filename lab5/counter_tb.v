@@ -28,7 +28,7 @@ module COUNTER_TB();
 	#45;
 	in = 1;
 	
-	#1;
+	#5;
 	in = 0;
 	
 	#10;
